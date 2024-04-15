@@ -26,5 +26,4 @@ func main() {
 	jwtUC := jwt.NewUseCaseImpl(coll)
 	delivery := http2.NewJWTHTTP(jwtUC)
 	delivery.Start(port)
-	slog.Info("Server listening on port %d\n", port)
 }
